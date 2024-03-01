@@ -8,7 +8,7 @@ body{
 }
 header {
     /* border: 1px solid red; */
-    height: 60px;
+    height: 0px;
     display: flex;
     flex-direction: row;
     /* position: fixed; */
@@ -16,22 +16,28 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    /* margin-bottom: 100px; */
-    /* margin-top: 100px; */
+    margin-bottom: 100px;
+    margin-top: 0px;
 }
 header h1 {
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 50px;
     margin-left: 40px;
 }
 header h1 span {
-    font-weight: 600;
-    margin-left: 4px;
+    font-weight: 600px;
+    margin-left: 40px;
+}
+.listContainer{
+    display: flex;
+    justify-content: ;
+    align-items: center;
+    gap:50px;
 }
 .ban {
-    background-image: url(images/banner.webp);
+    background-image: url(./images/711d51ca1b458931.webp);
     background-size: cover;
-    /* padding: 100px; */
+    padding: 100px;
     height: 100vh;
     background-repeat: no-repeat;
 }
@@ -45,13 +51,13 @@ header h1 span {
     border-radius: 30px;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 18px;
     background-color:transparent;
     box-shadow: 2px 1px 2px 1px #ccc;
     cursor: pointer;
 }
 button.bt2 {
- background-color: black;
+ background-color: red;
  color: white;
 }
 .bt1:hover {
@@ -61,7 +67,7 @@ button.bt2 {
     background-color: #ccc;
 }
 button.bt1 {
-    background-color: white;
+    background-color: greenyellow;
     color: black;
    }
 section img{
@@ -70,22 +76,37 @@ section img{
 
 } 
 .gallery {
+    height: fit-content;
     display: grid;
     grid-template-columns: auto auto auto;
     margin-top: 20px;
     padding: 20px;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     text-align: center;
 }
 .gallery img {
     border-radius: 20px;
+    justify-content: right;
+    
+    
 }
-.Order{
+.Order1{
     margin: 20px;
+    justify-content: right;
+}   
+
+.Order2{
+    margin: 20px;
+    justify-content: center;
 }
+.Oderer3{
+    margin: 20px;
+    justify-content: center;
+}
+
 .process {
-/* background-color: green; */
+background-color: green;
 display:flex;
 justify-content: space-around;
 flex-basis: 200px;
@@ -95,75 +116,225 @@ flex-basis: 200px;
 .purpose{
     background-color: gold;
 }
-
-.hero {
-    /* margin: 500px; */
-    padding: 400px;
-}
 .hero h2 {
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 800;
+    color:red;
 }
-.inp {
-    width: 300px;
-    height: 40px;
+.hero {
+        margin: 10px;
+        padding: 10px;
+    }
+    .inp {
+        width: 300px;
+        height: 40px;
+        
+    }
+    ::placeholder {
+        color: gray;
+        font-weight: bold;
+        padding: 8px;
+    }
+    .search {
+        padding: 10px;
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+    }
+    .searchere {
+        padding: 10px;
+        background-color: black;
+        color:white;
+        border-radius: 20px;
+         }
     
-}
-::placeholder {
-    color: gray;
-    font-weight: bold;
-    padding: 8px;
-}
-.search {
-    padding: 10px;
-    background-color: white;
-    color: black;
-    border-radius: 20px;
-}
-.searchere {
-    padding: 10px;
-    background-color: black;
-    color:white;
-    border-radius: 20px;
-     }
+    .cities {
+      display: flex;
+      flex-direction: column;
+      justify-content:center ;
+      align-items: center;
+        background-color: white;
+        padding: 15px;
+    }
+    .food{
+     
+        justify-content: center;
+        display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    
+    }
+    .cityV {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 720px;
+       
+    }
+    .cityV h3{
+        font-size: 30px;
+    }
+    .cityV ul{
+       list-style: none;
+    }
+    .CountrieSection{
+    max-width: 1440px;
+    }
+    .CountriesContainer{
+        display: flex;
+    }
+    .Countries{
+        background-color: white;
+        padding: 15px;
+    }
+    .CountriesV {
+        gap: 200px;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+        
+    }
+    .footerimg{
+        margin-top:30px;
+    }
+    .CountriesV h3{
+        font-size: 20px;
+    }
+    .CountriesU{
+       list-style: none;
+       margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+    .list{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        display: flex;
 
-.cities {
-    background-color: white;
-    padding: 15px;
-}
-.cityV {
-    display: flex;
-    justify-content: space-between;
-   
-}
-.cityV h3{
-    font-size: 30px;
-}
-.cityV ul{
-   list-style: none;
-}
-.Countries{
-    background-color: white;
-    padding: 15px;
-}
-.CountriesV {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-}
-.CountriesV h3{
-    font-size: 30px;
-}
-.CountriesV ul {
-   list-style: none;
-}
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        list-style: none;
+    }
+    
+    /* .uber Eats h4{
+        display:flex;
+    }
+    
+    .worldV ul {
+        justify-content: space-between;
+        list-style: none;
+        font-size: 20px;
 
-.ubereats h4{
-    display:flex;
+     }    */
+
+     .section2{
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        background:white;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    .f-c {
+        width: 90%;
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 20px;
+        list-style: none;
+        margin-top: 20px;
+    }
+
+
+    .land li{
+        width: 90%;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 20px;
+        list-style: none;
+        margin-top: 20px;
+    }
+    .links {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .services h3 p{
+        padding: 20px;
+        gap:10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .get li{
+        padding: 5px;
+        gap:5px;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    
+    .ret li{
+        padding: 5px;
+        gap:5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     
 
+@media screen and (max-width:600px) {
+    .menu_icon{
+        display: block;
+    }
+    .header ul{
+        display:block;
+        flex-direction: column;
+        max-width: 300px;
+        min-width: 100px;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        right: 0;
+        top: 70px;
+        border-radius: 7px;
+    } 
+
+    .header li{
+        margin: 10px auto;
+        width: 90%;
+    }
+    .cities{
+        justify-content: center;
+    }
+
+    .header li a{
+        display: block;
+        width:100%;
+    }
+
+    .gallery{
+        grid-template-columns: auto auto auto;
+    }
+    }
+img{
+ 
+    width: 400px ;
 }
-
-
-
-
+    
